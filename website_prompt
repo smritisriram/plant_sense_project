@@ -1,0 +1,335 @@
+Create a complete Flask-based web application called PlantSense Hub for my existing Arduino project, PlantSense.
+IMPORTANT
+I already have a fully working Arduino and Python system. DO NOT change, remove, or rewrite any of the following:
+Arduino code
+Serial communication
+Plant matching algorithm
+LCD functionality
+Sensor readings
+Existing Python plant database
+The website should build around my existing code and preserve all functionality exactly as written.
+
+Existing Hardware
+Arduino Uno
+DHT11 Temperature & Humidity Sensor
+LDR Light Sensor
+16x2 LCD Display
+The Arduino sends:
+Temperature
+Humidity
+Light Level
+The Python script:
+Reads serial data.
+Calculates compatibility scores.
+Ranks all plants.
+Displays the best match on the LCD.
+Sends data to the website.
+
+Website Name
+PlantSense Hub
+Tagline
+"Find Your Perfect Plant Match."
+
+Design Requirements
+Theme Colors:
+Lavender
+Sage Green
+White
+Design Style:
+Cute
+Minimalistic
+Modern
+Plant-themed
+Rounded cards
+Soft shadows
+Animated leaves and flowers
+Cozy aesthetic
+Fonts:
+Syne Mono
+Cabin Sketch
+Pangolin
+
+Website Structure
+Create the following pages:
+Home
+Dashboard
+Plant Library
+About
+
+HOME PAGE
+Include:
+PlantSense Hub logo.
+Tagline.
+Project description.
+Animated plant illustrations.
+Brief explanation of how PlantSense works.
+Example flow:
+User places PlantSense in a room.
+Sensors collect environmental data.
+Python analyzes conditions.
+PlantSense recommends plants.
+PlantSense Hub provides additional information.
+Include buttons:
+View Dashboard
+Explore Plant Library
+
+DASHBOARD PAGE
+Display live sensor data:
+Temperature (°C)
+Humidity (%)
+Light Level
+Display:
+Best Plant Match
+Compatibility Score
+Top Three Recommendations
+Example:
+Pothos (98%)
+Snake Plant (95%)
+ZZ Plant (92%)
+Include:
+Progress bars for compatibility.
+Sensor cards.
+Friendly messages.
+Example:
+"This room has moderate light and average humidity, making it ideal for tropical indoor plants."
+Include a section:
+Similar Plants
+Display six similar plants based on environmental requirements.
+Example:
+If the best match is Pothos:
+Monstera
+Philodendron
+Spider Plant
+ZZ Plant
+Peace Lily
+Rubber Plant
+Each similar plant should be clickable and navigate to its own page in the Plant Library.
+
+PLANT LIBRARY
+Create individual pages/cards for every plant currently used in my Python code.
+REQUIRED PLANTS
+Pothos
+Snake Plant
+ZZ Plant
+Peace Lily
+Spider Plant
+Monstera
+African Violet
+Orchid
+Anthurium
+Kalanchoe
+Aloe Vera
+Cactus
+Basil
+Rubber Plant
+Cast Iron Plant
+Each plant page must include:
+Plant image
+Description
+Ideal temperature
+Ideal humidity
+Ideal light level
+Watering frequency
+Difficulty level
+Pet-safe status
+Fun fact
+Similar plants
+Where to buy
+Why PlantSense recommends this plant
+Example:
+Pothos
+Description:
+A low-maintenance tropical vine perfect for beginners.
+Ideal Temperature:
+18-30°C
+Ideal Humidity:
+40-70%
+Ideal Light:
+300-800
+Watering:
+Every 1-2 weeks.
+Difficulty:
+Easy.
+Pet Safe:
+No.
+Fun Fact:
+Pothos vines can grow over 10 feet indoors.
+Why PlantSense Recommends It:
+"This plant thrives in environments with moderate light and average humidity."
+
+SIMILAR PLANTS
+Every plant MUST include six similar plants.
+Example Relationships
+Pothos:
+Monstera
+Philodendron
+Spider Plant
+ZZ Plant
+Peace Lily
+Rubber Plant
+Snake Plant:
+ZZ Plant
+Cast Iron Plant
+Aloe Vera
+Cactus
+Pothos
+Spider Plant
+ZZ Plant:
+Snake Plant
+Cast Iron Plant
+Peace Lily
+Pothos
+Rubber Plant
+Monstera
+Peace Lily:
+Pothos
+Monstera
+Spider Plant
+Anthurium
+Orchid
+Rubber Plant
+Spider Plant:
+Pothos
+Peace Lily
+Monstera
+ZZ Plant
+Rubber Plant
+Cast Iron Plant
+Monstera:
+Pothos
+Rubber Plant
+Anthurium
+Peace Lily
+Spider Plant
+Orchid
+African Violet:
+Orchid
+Peace Lily
+Anthurium
+Spider Plant
+Pothos
+Monstera
+Orchid:
+African Violet
+Anthurium
+Peace Lily
+Monstera
+Spider Plant
+Pothos
+Anthurium:
+Orchid
+Peace Lily
+Monstera
+African Violet
+Rubber Plant
+Pothos
+Kalanchoe:
+Aloe Vera
+Cactus
+Basil
+Snake Plant
+ZZ Plant
+Cast Iron Plant
+Aloe Vera:
+Cactus
+Kalanchoe
+Snake Plant
+ZZ Plant
+Basil
+Cast Iron Plant
+Cactus:
+Aloe Vera
+Kalanchoe
+Basil
+Snake Plant
+ZZ Plant
+Cast Iron Plant
+Basil:
+Kalanchoe
+Aloe Vera
+Cactus
+Pothos
+Spider Plant
+Rubber Plant
+Rubber Plant:
+Monstera
+Pothos
+Peace Lily
+Spider Plant
+ZZ Plant
+Anthurium
+Cast Iron Plant:
+Snake Plant
+ZZ Plant
+Spider Plant
+Aloe Vera
+Cactus
+Kalanchoe
+Every similar plant listed above should link directly to its respective page.
+
+WHERE TO BUY
+Every plant page should include:
+Available at local nurseries.
+Commonly sold at home improvement stores.
+Available through online retailers.
+Display these as clickable cards with plant-themed icons.
+
+ABOUT PAGE
+Include:
+Inspiration behind PlantSense.
+Problem statement.
+Abstract.
+Hardware used.
+Software used.
+Future improvements.
+Development timeline.
+Photos/illustrations of the project.
+
+TECHNICAL REQUIREMENTS
+Use Flask.
+Use HTML.
+Use CSS.
+Use JavaScript.
+Use Jinja templates.
+Keep the existing Python script intact.
+Maintain LCD functionality.
+Maintain serial communication.
+Organize files into:
+app.py
+templates/
+    home.html
+    dashboard.html
+    plant_library.html
+    plant_details.html
+    about.html
+
+static/
+    styles.css
+    script.js
+    images/
+
+
+ADDITIONAL FEATURES
+Include:
+Animated loading screen.
+Responsive design.
+Smooth transitions.
+Hover effects.
+Progress bars.
+Plant cards.
+Search bar for plants.
+Filter by:
+Pet Safe
+Beginner Friendly
+Low Light
+High Humidity
+Succulents
+Tropical Plants
+
+FINAL REQUIREMENT
+The website should feel like a complete companion application rather than a simple dashboard. Users should feel as though they are exploring a digital plant encyclopedia connected to the PlantSense device.
+Generate all Flask, HTML, CSS, and JavaScript files necessary to make the website fully functional while preserving my existing Arduino and Python code.
+
+
+
+
